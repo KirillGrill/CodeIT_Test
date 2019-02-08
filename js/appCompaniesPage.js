@@ -217,7 +217,6 @@ jQuery(function($) {
     })
 
     //новости
-    //var parseDate = new Date(newsFromServer.list[i].date * 1000).format("dd.mm.yyyy");
     const newsSlider = $("#newsSlider");
     var holderNews = ``;
     for (var i = 0; i < newsFromServer.list.length; ++i) {

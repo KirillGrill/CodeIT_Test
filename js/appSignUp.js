@@ -1,9 +1,9 @@
 jQuery(function($) {
     var form = $('#register');
     form.on('submit', function(event) {
-        event.preventDefault(); // отменяем событие по умолчанию
-        if ( validateForm() ) { // если есть ошибки возвращает true
-            return false; // прерываем выполнение скрипта
+        event.preventDefault();
+        if ( validateForm() ) {
+            return false;
         }
 
         $.ajax({
@@ -151,27 +151,3 @@ jQuery(function($) {
     }
 
 });
-
-// var frm = $('#register');
-//
-// frm.submit(function (e) {
-//
-//     e.preventDefault();
-//
-//     $.ajax({
-//         type: frm.attr('method'),
-//         url: frm.attr('action'),
-//         data: frm.serialize(),
-//         contentType: "application/json; charset=utf-8",
-//         dataType: "json",
-//         success: function (data) {
-//             console.log('An error occurredgylkyul.');
-//             $("#ref-content").html(data.d);
-//         },
-//         error: function (data) {
-//             console.log('An error occurred.');
-//             console.log(data);
-//         },
-//     });
-// });
-
