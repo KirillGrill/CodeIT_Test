@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Companies</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300">
+    <link rel="stylesheet" href="css/styleCompaniesPage.css">
+    <script src="jquery-2.2.4.min.js"></script>
+    <script src="js/appCompaniesPage.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+    <section class="totalCompanies field">
+        <label type="text" class="titel">Total Companies</label>
+        <hr class="line">
+        <label id="numberOfCompanies" type="text" class="numberOfCompanies"></label>
+    </section>
+    <section id="wrapListOfCompanies" class="listOfCompanies field">
+        <label type="text" class="titel">List of Companies</label>
+        <hr class="line">
+        <div id="listOfCompanies" class="verticalList"></div>
+    </section>
+    <section id="companiesByLocation" class="companiesByLocation field">
+        <label id="titelCompaniesByLocation" type="text" class="titel">Companies by location</label>
+        <hr class="line">
+        <div id="wrapCompaniesByLocation" class="frame">
+            <canvas id="locationDiagram" class="locationDiagram"></canvas>
+            <div id="countriesInDiagram" class="countriesInDiagram"></div>
+        </div>
+        <div id="companiesOfCountry" class="verticalList" hidden></div>
+        <img id="backArrow" class="backArrow" src="https://pro-mebel.org/templates/promebel/images/back.gif" hidden>
+        <div id="nameOFCountry" type="text" class="nameOFCountry titel" hidden></div>
+    </section>
+    <section id="news" class="news field">
+        <label type="text" class="titel">News</label>
+        <hr class="line">
+        <div class="wrapNewsSlider">
+            <div id="leftButton" class="leftButton"><br><br><br><br><</div>
+            <div id="rightButton" class="rightButton"><br><br><br><br>></div>
+            <ul id="newsSlider" class="newsSlider"></ul>
+        </div>
+    </section>
+    <section id="partners" class="partners field" hidden>
+        <label type="text" class="titel">Company partners</label>
+        <hr class="line">
+        <div class="horizontalList">
+            <ul id="listOfPartners" type="text" class="partnerHorizontalList"></ul>
+            <ul id="stockPercent" type="text" class="percentHorizontalList"></ul>
+        </div>
+        <img id="closeButton" class="closeButton" src="http://www.freeiconspng.com/uploads/silver-close-button-png-15.png">
+    </section>
+
+</div>
+
+</body>
+
+
+</html>

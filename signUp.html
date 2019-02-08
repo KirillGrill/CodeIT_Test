@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up form</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300">
+    <link rel="stylesheet" href="css/styleSignUp.css">
+    <script src="jquery-2.2.4.min.js"></script>
+    <script src="js/appSignUp.js"></script>
+
+
+</head>
+
+<body>
+
+<div class="signupForm">
+    <div class="logo">
+        <img class="image" src="https://codeit.us//app/uploads/2016/02/logo4.png">
+    </div>
+    <form id="register" action="http://codeit.pro/codeitCandidates/serverFrontendTest/user/registration" method="post">
+        <div>
+            <input class="form-control" type="text" name="name" id="name" placeholder="Name"/>
+        </div>
+        <div>
+            <input class="form-control" type="text" name="secondname" id="secondname" placeholder="Secondname"/>
+        </div>
+        <div>
+            <input class="form-control" type="text" name="email" id="email" placeholder="E-mail"/>
+        </div>
+        <div>
+            <select class="form-control" name="gender" id="gender">
+                <option selected disabled>Gender</option>
+                <option type="option">male</option>
+                <option type="option">female</option>
+            </select>
+        </div>
+        <div>
+            <input class="form-control" type="password" name="pass" id="password" placeholder="Password"/>
+        </div>
+        <div>
+            <div class="checkbox">
+                <input type="checkbox" id="agreement" name="agreement"/>
+                <label for="agreement" id="agreement-text">Conditions of Agreement</label>
+            </div>
+        </div>
+        <div class="m-t-lg">
+            <input type="submit" class="btn btnForm" value="Register"/>
+        </div>
+    </form>
+</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+  font: 100% / 1.414 "Open Sans", "Roboto", arial, sans-serif;
+  background: #e9e9e9;
+}
+
+a,
+[type="submit"] {
+  transition: all .25s ease-in;
+}
+
+.signupForm {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  align-items: center;
+  justify-content: center;
+  width: 25rem;
+  height: 36.25rem;
+  border-radius: 0.1875rem;
+  box-shadow: 0px 0.1875rem 0.4375rem rgba(0, 0, 0, 0.25);
+  padding: 2.5rem;
+  background: #fafafa;
+}
+
+.logo {
+  margin-bottom: 0.4375rem;
+}
+
+.image {
+  width: 11.375rem;
+  height: 2.8125rem;
+}
+
+.form-control {
+  margin-top: 1.25rem;
+  margin-bottom: 2.1875rem;
+  background-color: transparent;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-radius: 0;
+  color: #95999c;
+}
+
+.form-control:focus {
+  border-color: #111;
+}
+
+.error {
+  border-color: #ff0000;
+  color: #ff0000;
+}
+
+[type="option"] {
+    color: #111;
+}
+
+[type="text"] {
+  color: #111;
+}
+
+[type="password"] {
+  color: #111;
+}
+
+.checkbox {
+  margin-left: 1.375rem;
+  color: #95999c;
+}
+
+.btnForm {
+  padding: .5rem 2.5rem;
+  font-size: .95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  background: #111;
+  border-radius: 2.1875rem;
+  margin-top: -2.5rem;
+  margin-left: 5.5rem;
+}
+
+.btnForm:focus, .btnForm:hover {
+  background: #323232;
+}
+
+form#register span.text-error {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: red;
+  font-size: 0.625rem;
+  line-height: 0.625rem;
+}

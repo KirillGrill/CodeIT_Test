@@ -1,0 +1,312 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font: 100% / 1.414 "Open Sans", "Roboto", arial, sans-serif;
+    overflow: hidden;
+    background: #e9e9e9;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+[type="text"] {
+    color: #95999c;
+}
+/*общие параметры */
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.field {
+    width: 29.375rem;
+    height: 18.75rem;
+    border-radius: 0.1875rem;
+    box-shadow: 0px 0.1875rem 0.4375rem rgba(0, 0, 0, 0.25);
+    padding: 2.5rem;
+    background: #fafafa;
+}
+
+.totalCompanies {
+    position: absolute;
+    top: 7%;
+    right: 0;
+    left: 20%;
+}
+
+.listOfCompanies {
+    position: absolute;
+    top: 7%;
+    right: 0;
+    left: 51%;
+}
+
+.partners {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 51%;
+}
+
+.companiesByLocation {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 20%;
+}
+
+.news {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 51%;
+}
+
+.titel {
+    font-weight: bold;
+    text-transform: uppercase;
+    -webkit-transform: translate(-1.25rem,-1.5625rem);
+}
+
+.line {
+    width: 26.5625rem;
+    -webkit-transform: translate(-1.25rem,-3.125rem);
+    background-color: #95999c;
+}
+/*-----------------*/
+
+
+/*далее частные параметры для каждлго окна*/
+/*окно количества компаний*/
+.numberOfCompanies {
+    font-size: 6.25rem;
+    -webkit-transform: translate(6.25rem,-1.5625rem);
+}
+/*------------*/
+
+/*окно списка компаний*/
+.verticalList {
+    height: 14.375rem;
+    width: 26.5625rem;
+    -webkit-transform: translate(-1.25rem,-3.125rem);
+    border: 0.0625rem solid #95999c;
+    overflow-y: auto;
+}
+
+.company {
+    padding: 0.75rem;
+    border-bottom: 0.0625rem solid #95999c;
+    text-align: center;
+}
+
+.company:hover {
+    background-color: #e9e9e9;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.click {
+    background-color: #e9e9e9;
+    font-weight: bold;
+}
+/*---------------------*/
+
+/*окно партнеров*/
+.horizontalList {
+    height: 14.375rem;
+    width: 26.5625rem;
+    -webkit-transform: translate(-1.25rem,-3.125rem);
+    border: 0.0625rem solid #95999c;
+    overflow: auto;
+    overflow-y: hidden;
+}
+
+.partnerHorizontalList {
+    height: 10rem;
+    width: max-content;
+    overflow: auto;
+    overflow-y: hidden;
+}
+
+.partner {
+    height: 11.25rem;
+    width: 8.125rem;
+    text-align: center;
+    display: inline;
+    transform: rotate(180deg);
+    writing-mode: tb-rl;
+    padding: 3.125rem;
+    border-left: 0.0625rem solid #95999c;
+}
+
+.percentHorizontalList {
+    height: 4.375rem;
+    width: max-content;
+    overflow: auto;
+    overflow-y: hidden;
+}
+
+.percent {
+    height: 4.25rem;
+    width: 8.125rem;
+    float: left;
+    display: inline;
+    text-align: center;
+    padding: 0.9375rem;
+    border: 0.0625rem solid #95999c;
+    border-left: 0;
+    border-bottom: 0;
+}
+
+.closeButton {
+    height: 1.5625rem;
+    width: 1.5625rem;
+    -webkit-transform: translate(25rem,-20.4375rem);
+}
+
+.closeButton:hover {
+    cursor: pointer;
+}
+/*--------------*/
+
+/*рамка*/
+.frame {
+    height: 14.375rem;
+    width: 26.5625rem;
+    -webkit-transform: translate(-1.25rem,-3.125rem);
+}
+/*----*/
+
+/*диаграмма*/
+.locationDiagram {
+    -webkit-transform: translate(85%,5%);
+}
+
+.countriesInDiagram {
+    -webkit-transform: translate( 2%,-90%);
+}
+
+.countriesInDiagramPointer {
+    width: max-content;
+}
+
+.countriesInDiagramPointer:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+/*-------------*/
+
+/*список компаний по каждой стране*/
+.company2 {
+    padding: 0.75rem;
+    border-bottom: 0.0625rem solid #95999c;
+    text-align: center;
+}
+
+.nameOFCountry {
+    -webkit-transform: translate(16.875rem,-21.6875rem);
+    width: max-content;
+}
+
+.backArrow {
+    height: 1.8125rem;
+    width: 1.8125rem;
+    -webkit-transform: translate(24.6875rem,-20.4375rem);
+}
+
+.backArrow:hover {
+    cursor: pointer;
+}
+/*---------------*/
+
+/*новости*/
+.wrapNewsSlider {
+    height: 14.375rem;
+    width: 26.5625rem;
+    -webkit-transform: translate(-1.25rem,-3.125rem);
+}
+
+.wrapNews {
+    height: 14.375rem;
+}
+
+.newsSlider {
+    height: 14.375rem;
+    width: max-content;
+}
+
+.oneNews {
+    list-style-type: none;
+    float: left;
+    display: inline;
+    -webkit-transform: translate(1.25rem, -14.375rem);
+}
+
+.imgNews {
+    height: 6.25rem;
+    width: 10.625rem;
+
+}
+
+.titleLink {
+    font-weight: bold;
+    -webkit-transform: translate(11.25rem,-470%);
+}
+
+.leftButton {
+    height: 14.375rem;
+    width: 1.0625rem;
+    background-color: #95999c;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Arial Black";
+    color: #e9e9e9;
+}
+
+.leftButton:hover {
+    cursor: pointer;
+    background-color: #a9a9a9;
+}
+
+.rightButton:hover {
+    cursor: pointer;
+    background-color: #a9a9a9;
+}
+
+.rightButton {
+    height: 14.375rem;
+    width: 1.0625rem;
+    background-color: #95999c;
+    float: right;
+    transform: translate(0,-100%);
+    text-align: center;
+    font-weight: bold;
+    font-family: "Arial Black";
+    color: #e9e9e9;
+}
+
+.description {
+    height: 12.5rem;
+    width: 12.5rem;
+    -webkit-transform: translate(90%,-49%);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 9;
+}
+
+.author {
+    -webkit-transform: translate(0,-600%);
+}
+
+.date {
+    -webkit-transform: translate(0,-600%);
+}
+/*------*/
+
